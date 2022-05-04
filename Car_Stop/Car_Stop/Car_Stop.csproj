@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4955D21B-BFFE-4CF7-A628-37C5BE444071}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Car_Stop</RootNamespace>
+    <AssemblyName>Car_Stop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="frm_car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_car.Designer.cs">
+      <DependentUpon>frm_car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carbianji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carbianji.Designer.cs">
+      <DependentUpon>frm_carbianji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carbianji2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carbianji2.Designer.cs">
+      <DependentUpon>frm_carbianji2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carbianji3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carbianji3.Designer.cs">
+      <DependentUpon>frm_carbianji3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carShanchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carShanchu.Designer.cs">
+      <DependentUpon>frm_carShanchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_carTianjia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_carTianjia.Designer.cs">
+      <DependentUpon>frm_carTianjia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pwd.Designer.cs">
+      <DependentUpon>frm_Pwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_stopcar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_stopcar.Designer.cs">
+      <DependentUpon>frm_stopcar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yonghu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yonghu.Designer.cs">
+      <DependentUpon>frm_yonghu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yonghuAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yonghuAdd.Designer.cs">
+      <DependentUpon>frm_yonghuAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yonghuGai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yonghuGai.Designer.cs">
+      <DependentUpon>frm_yonghuGai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_zhiFeiGai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_zhiFeiGai.Designer.cs">
+      <DependentUpon>frm_zhiFeiGai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ziFei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ziFei.Designer.cs">
+      <DependentUpon>frm_ziFei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_car.resx">
+      <DependentUpon>frm_car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carbianji.resx">
+      <DependentUpon>frm_carbianji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carbianji2.resx">
+      <DependentUpon>frm_carbianji2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carbianji3.resx">
+      <DependentUpon>frm_carbianji3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carShanchu.resx">
+      <DependentUpon>frm_carShanchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_carTianjia.resx">
+      <DependentUpon>frm_carTianjia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pwd.resx">
+      <DependentUpon>frm_Pwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_stopcar.resx">
+      <DependentUpon>frm_stopcar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yonghu.resx">
+      <DependentUpon>frm_yonghu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yonghuAdd.resx">
+      <DependentUpon>frm_yonghuAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yonghuGai.resx">
+      <DependentUpon>frm_yonghuGai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_zhiFeiGai.resx">
+      <DependentUpon>frm_zhiFeiGai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ziFei.resx">
+      <DependentUpon>frm_ziFei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tingche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tingche1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
